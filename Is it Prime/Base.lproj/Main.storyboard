@@ -21,15 +21,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is it Prime?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYv-v6-2eU">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FLd-DR-NtU">
                                 <rect key="frame" x="104" y="20" width="112" height="27.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RI4-XX-EiX">
+                                        <rect key="frame" x="0.0" y="0.0" width="112" height="27.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is it Prime?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYv-v6-2eU">
+                                                <rect key="frame" x="0.0" y="0.0" width="112" height="27.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mq-ij-lst">
-                                <rect key="frame" x="139" y="274" width="42" height="21"/>
+                                <rect key="frame" x="139" y="274" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -51,6 +60,8 @@
                         <constraints>
                             <constraint firstItem="1mq-ij-lst" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6r4-hc-uvL"/>
                             <constraint firstItem="1mq-ij-lst" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SCg-lS-dCI"/>
+                            <constraint firstItem="FLd-DR-NtU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hxD-qo-fgr"/>
+                            <constraint firstItem="FLd-DR-NtU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="nXA-rh-nvo"/>
                         </constraints>
                     </view>
                 </viewController>
